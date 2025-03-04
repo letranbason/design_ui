@@ -1,6 +1,5 @@
 import 'package:design_flutter/widget/navigation_menu.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
