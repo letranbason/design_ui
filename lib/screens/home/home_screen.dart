@@ -1,5 +1,6 @@
 import 'package:design_flutter/widget/banner.dart';
 import 'package:design_flutter/widget/search_bar.dart';
+import 'package:design_flutter/widget/text_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:design_flutter/constants.dart';
 
@@ -104,26 +105,9 @@ class HomeScreen extends StatelessWidget {
                 child: SearchBarWidget(),
               ),
               SizedBox(height: 10),
-              SizedBox(
-                height: 240,
-                child: CarouselView(
-                  itemExtent: MediaQuery.sizeOf(context).width - 0,
-                  itemSnapping: true,
-                  elevation: 5,
-                  children: List.generate(5, (index) {
-                    return Container(
-                      margin: const EdgeInsets.all(0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
-                          image: AssetImage('assets/banners/banner.png'),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    );
-                  }),
-                ),
-              ),
+              BannerCarousel(),
+              SizedBox(height: 10),
+              MovingGradientText(),
             ],
           ),
         ),

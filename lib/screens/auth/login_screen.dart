@@ -1,6 +1,6 @@
+import 'package:design_flutter/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:design_flutter/constants.dart';
-import 'package:design_flutter/widget/navigation_menu.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const NavigationMenu(),
+                            builder: (context) => WelcomeScreen(),
                           ),
                         );
                       },
