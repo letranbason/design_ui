@@ -18,9 +18,10 @@ class _NavigationBarState extends State<NavigationMenu> {
   final List<Widget> _pages = [
     const HomeScreen(),
     const DocumentsScreen(),
-    const ProfileScreen(),
+    ProfileScreen(),
   ];
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primaryBlack,

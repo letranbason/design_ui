@@ -85,7 +85,7 @@ class LoginScreen extends StatelessWidget {
                   Icon(Icons.fingerprint, size: 40, color: AppColors.subTitle),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

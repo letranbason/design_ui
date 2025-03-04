@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MovingGradientText extends StatefulWidget {
+  const MovingGradientText({super.key});
+
   @override
   _MovingGradientTextState createState() => _MovingGradientTextState();
 }
