@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
+              const SizedBox(height: 30),
               _PasswordTextField(onPasswordChanged: (String) {}),
               const SizedBox(height: 10),
               Align(

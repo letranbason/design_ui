@@ -1,4 +1,5 @@
 import 'package:design_flutter/widget/banner.dart';
+import 'package:design_flutter/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:design_flutter/constants.dart';
 
@@ -100,67 +101,32 @@ class HomeScreen extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
-                child: SearchBar(),
+                child: SearchBarWidget(),
               ),
               SizedBox(height: 10),
-              BannerCarousel(),
-              // CarouselView(
-              //   itemExtent: MediaQuery.sizeOf(context).width - 0,
-              //   itemSnapping: true,
-              //   elevation: 5,
-              //   children: List.generate(5, (index) {
-              //     return Container(
-              //       margin: const EdgeInsets.all(0),
-              //       decoration: BoxDecoration(
-              //         borderRadius: BorderRadius.circular(10),
-              //         image: DecorationImage(
-              //           image: AssetImage('assets/banners/banner.png'),
-              //           fit: BoxFit.cover,
-              //         ),
-              //       ),
-              //     );
-              //   }),
-              // ),
+              SizedBox(
+                height: 240,
+                child: CarouselView(
+                  itemExtent: MediaQuery.sizeOf(context).width - 0,
+                  itemSnapping: true,
+                  elevation: 5,
+                  children: List.generate(5, (index) {
+                    return Container(
+                      margin: const EdgeInsets.all(0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(
+                          image: AssetImage('assets/banners/banner.png'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    );
+                  }),
+                ),
+              ),
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class SearchBar extends StatelessWidget {
-  const SearchBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [Colors.grey[300]!, Colors.grey[600]!],
-        ),
-        borderRadius: BorderRadius.circular(30),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 2,
-            blurRadius: 5,
-            offset: Offset(0, 3),
-          ),
-        ],
-      ),
-      child: TextField(
-        decoration: InputDecoration(
-          prefixIcon: Icon(Icons.search, color: Colors.white),
-          hintText: 'Search...',
-          hintStyle: TextStyle(color: Colors.white70),
-          border: InputBorder.none,
-          contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-        ),
-        style: TextStyle(color: Colors.white),
       ),
     );
   }
