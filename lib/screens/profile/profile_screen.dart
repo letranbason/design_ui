@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,6 +107,8 @@ class ProfileScreen extends StatelessWidget {
 }
 
 class GlassCard extends StatelessWidget {
+  const GlassCard({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Center(

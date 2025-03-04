@@ -18,13 +18,14 @@ class LoginScreen extends StatelessWidget {
                 child: Image.asset('assets/logo/toyota_logo.png', height: 250),
               ),
               Text(
-                'LOGIN',
+                'ĐĂNG NHẬP',
                 style: TextStyle(
                   color: AppColors.title,
                   fontSize: FontSizes.title,
                   fontWeight: FontAttributes.bold,
                 ),
               ),
+              const SizedBox(height: 30),
               TextField(
                 decoration: InputDecoration(
                   hintText: 'Username',
