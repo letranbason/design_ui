@@ -46,7 +46,7 @@ class _MovingGradientTextState extends State<MovingGradientText>
                   end: _animationEnd.value,
                 ).createShader(bounds),
             child: Text(
-              "Featured car models",
+              "Dòng xe nổi bật",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

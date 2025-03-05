@@ -1,4 +1,4 @@
-import 'package:design_flutter/widget/navigation_menu.dart';
+import 'package:design_flutter/shared/widget/navigation_menu.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {

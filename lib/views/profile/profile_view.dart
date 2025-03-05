@@ -1,4 +1,4 @@
-import 'package:design_flutter/constants.dart';
+import 'package:design_flutter/core/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -92,7 +92,7 @@ class ProfileScreen extends StatelessWidget {
                           ],
                         ),
                         child: Image.asset(
-                          'assets/images/car.png',
+                          'assets/images/car3.png',
                           fit: BoxFit.cover,
                         ),
                       ).animate().fade(duration: 700.ms).scale(),

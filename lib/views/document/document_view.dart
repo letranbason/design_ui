@@ -1,5 +1,5 @@
+import 'package:design_flutter/core/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:design_flutter/constants.dart';
 
 class DocumentsScreen extends StatelessWidget {
   const DocumentsScreen({super.key});

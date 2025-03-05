@@ -1,9 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:design_flutter/core/constants.dart';
+import 'package:design_flutter/views/document/document_view.dart';
+import 'package:design_flutter/views/home/home_view.dart';
+import 'package:design_flutter/views/profile/profile_view.dart';
 import 'package:flutter/material.dart';
-import 'package:design_flutter/constants.dart';
-import 'package:design_flutter/screens/document/document_screen.dart';
-import 'package:design_flutter/screens/home/home_screen.dart';
-import 'package:design_flutter/screens/profile/profile_screen.dart';
 
 class NavigationMenu extends StatefulWidget {
   const NavigationMenu({super.key});
